@@ -1,6 +1,7 @@
 body {
   background-color: #222;
   color: whitesmoke;
+  font-size: 19px;
   text-align: center;
 }
 
@@ -12,20 +13,25 @@ body {
   margin: 80px auto;
 }
 
-#display {
+#display-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   background-color: #444;
   border: 3px solid #444;
   border-radius: 6px;
   color: whitesmoke;
-  height: 40px;
+  height: 45px;
 }
 
-#display-text {
-  align-self: center;
-  margin-right: 10px;
-  
+#equation, #display {
+  text-align: right;
+  width: 90%;
+  margin-right: 15px;
+}
+
+#equation {
+  color: orange;
 }
 
  #buttons {
@@ -47,6 +53,7 @@ body {
 }
 
 .button {
+  user-select: none;
   display: inline-block;
   background-color: #AAA;
   color: #222;
