@@ -26,7 +26,7 @@ function App() {
       return;
     }
 
-    if (equation.length > 30) return setDisplay("Character limit exceeded.")
+    if (newEquation.length > 60) return setDisplay("Character limit exceeded.")
 
     if (equation === "0") newEquation = "";
 
@@ -36,6 +36,7 @@ function App() {
     if (signs.includes(newChar)){
       if (equation === "0") return;
       if (prevChar === " ") newEquation = newEquation.slice(0, newEquation.length - 3);
+      if (prevChar === "-") newEquation = newEquation.slice(0, newEquation.length - 4);
       if (prevChar === ".") newEquation = newEquation.slice(0, newEquation.length - 1);
       newChar = " " + newChar + " ";
     }
@@ -81,8 +82,8 @@ function App() {
     if (prevChar === ".") newEquation = newEquation.slice(0, newEquation.length - 1);
     if (prevChar === "-") newEquation = newEquation.slice(0, newEquation.length - 4);
     
-    let ans = round(evaluate(newEquation), 6);
-
+    let ans = round(evaluate(newEquation), 6).toString();
+    
     setEquation(newEquation + " = " + ans)
     setDisplay(ans);
   }
@@ -128,6 +129,10 @@ function App() {
           </div>
 
         </div>
+      </div>
+
+      <div id="footer">
+        <a href="https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator" target="_blank">JavaScript Calculator FCC Project</a> <br /> by <a href="https://www.billybdev.com" target="_blank">Billy Brown III</a>
       </div>
     </div>
   );

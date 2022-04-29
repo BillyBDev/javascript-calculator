@@ -1,55 +1,53 @@
 body {
-  background-color: #222;
+  background-color: #0a1a23;
   color: whitesmoke;
   font-size: 19px;
   text-align: center;
 }
 
 #calculator {
-  height: 360px;
+  min-height: 340px;
   width: 300px;
   border: 3px solid orange;
+  background-color: #111;
   border-radius: 10px;
-  margin: 80px auto;
+  margin: 80px auto 5px auto;
 }
 
 #display-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  background-color: #444;
-  border: 3px solid #444;
-  border-radius: 6px;
+  background-color: #353535;
+  border: 3px solid #353535;
+  border-radius: 6px 6px 0 0;
   color: whitesmoke;
-  height: 45px;
+  min-height: 47px;
+  margin-bottom: 4px;
 }
 
 #equation, #display {
   text-align: right;
   width: 90%;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 #equation {
   color: orange;
 }
 
+#display {
+  font-size: 1.15em;
+}
+
  #buttons {
   display: flex;
 }
 
-
 #main-buttons {
-  display: inline-block;
-  /* border: 2px solid white; */
   width: 75%;
 }
 
 #right-buttons {
-  display: inline-block;
-  /* border: 2px solid white; */
   width: 25%;
-  margin-left: -4px;
+  margin-left: -3px;
 }
 
 .button {
@@ -57,20 +55,48 @@ body {
   display: inline-block;
   background-color: #AAA;
   color: #222;
-  width: 71px;
-  height: 35px;
-  margin: 1px;
-  border-radius: 2px;
+  width: 69px;
+  height: 37px;
+  margin: 2px;
+  border-radius: 3px;
   padding-top: 15px;
 }
 
 #add, #equals {
-  height: 87px;
+  height: 93px;
 }
 
 
 #zero {
-  width: 144px;
+  width: 141px;
+}
+
+#footer {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.7em;
+  text-align: right;
+  margin: 0 auto;
+  width: 260px;
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 
