@@ -1,12 +1,12 @@
 body {
   background-color: #0a1a23;
   color: whitesmoke;
-  font-size: 19px;
+  font-size: 23px;
   text-align: center;
 }
 
 #calculator {
-  min-height: 340px;
+  min-height: 350px;
   width: 300px;
   border: 3px solid orange;
   background-color: #111;

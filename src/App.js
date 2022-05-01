@@ -14,7 +14,6 @@ function App() {
     const signs = ["+", "/", "*"];
     const nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-    // todo: handle case where they follow up with num input instead of a sign
     if (newEquation.includes("=")){
       newEquation = newEquation.slice(newEquation.lastIndexOf(" "))
       if (nums.includes(newChar)) newEquation = "";
@@ -32,7 +31,6 @@ function App() {
 
     // handle special characters
 
-    
     if (signs.includes(newChar)){
       if (equation === "0") return;
       if (prevChar === " ") newEquation = newEquation.slice(0, newEquation.length - 3);
