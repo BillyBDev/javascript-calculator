@@ -130,7 +130,7 @@ function App() {
       </div>
 
       <div id="footer">
-        <a href="https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator" target="_blank">JavaScript Calculator FCC Project</a> <br /> by <a href="https://www.billybdev.com" target="_blank">Billy Brown III</a>
+        <a href="https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator" target="_blank">JavaScript Calculator FCC Project</a> <br /> by <a href="https://www.billybrowniii.com" target="_blank">Billy Brown III</a>
       </div>
     </div>
   );
