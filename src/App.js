@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// @ts-ignore
 import { evaluate, round } from 'mathjs/number';
 
 
